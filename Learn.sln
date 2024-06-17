@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E94C8967-1C47-4FB6-AF0E-E8FF5B8EA4C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.Dotnet.DependencyInjection", "Learn.Dotnet.DependencyInjection", "{FAA5308E-FBF6-4CD8-8644-48D42EFA81F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Dotnet.DependencyInjection.Consl", "src\dotnet\Learn.Donet.DependencyInjection\Learn.DependencyInjection.Consl\Learn.Dotnet.DependencyInjection.Consl.csproj", "{B64628DC-C163-4436-8CFB-E39C8781F9DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64628DC-C163-4436-8CFB-E39C8781F9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64628DC-C163-4436-8CFB-E39C8781F9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64628DC-C163-4436-8CFB-E39C8781F9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64628DC-C163-4436-8CFB-E39C8781F9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203} = {E94C8967-1C47-4FB6-AF0E-E8FF5B8EA4C2}
+		{FAA5308E-FBF6-4CD8-8644-48D42EFA81F8} = {6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203}
+		{B64628DC-C163-4436-8CFB-E39C8781F9DF} = {FAA5308E-FBF6-4CD8-8644-48D42EFA81F8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {410A700A-1F4F-4E3A-A050-2834BD62B6B5}
+	EndGlobalSection
+EndGlobal
