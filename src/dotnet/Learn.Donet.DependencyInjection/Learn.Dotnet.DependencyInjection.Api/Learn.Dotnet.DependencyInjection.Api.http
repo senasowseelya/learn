@@ -1,0 +1,6 @@
+@Learn.Dotnet.DependencyInjection.Api_HostAddress = http://localhost:5195
+
+GET {{Learn.Dotnet.DependencyInjection.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
