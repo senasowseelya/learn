@@ -1,0 +1,5 @@
+1.Not only interfaces but also Abstract classes can be used for DependencyInjection, but interfaces are preferred because of its benefits
+	a.Multiple inheritance is not possible in abstract classes
+	b.Mocking of interface is easier than abstract classes while unit testing
+	c.Interfaces are more flexible than abstract classes
+	d.Interfaces are more readable than abstract classes and also abstract class can have some implementation which can be confusing

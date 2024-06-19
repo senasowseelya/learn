@@ -8,10 +8,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.Dotnet.DependencyInjection", "Learn.Dotnet.DependencyInjection", "{FAA5308E-FBF6-4CD8-8644-48D42EFA81F8}"
+	ProjectSection(SolutionItems) = preProject
+		Highlights.txt = Highlights.txt
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Dotnet.DependencyInjection.Consl", "src\dotnet\Learn.Donet.DependencyInjection\Learn.DependencyInjection.Consl\Learn.Dotnet.DependencyInjection.Consl.csproj", "{B64628DC-C163-4436-8CFB-E39C8781F9DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Dotnet.DependencyInjection.Api", "src\dotnet\Learn.Donet.DependencyInjection\Learn.Dotnet.DependencyInjection.Api\Learn.Dotnet.DependencyInjection.Api.csproj", "{4650635B-6EB5-4511-8A2B-74ECC7BEEDAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Dotnet.DependencyInjection.Api", "src\dotnet\Learn.Donet.DependencyInjection\Learn.Dotnet.DependencyInjection.Api\Learn.Dotnet.DependencyInjection.Api.csproj", "{4650635B-6EB5-4511-8A2B-74ECC7BEEDAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.Dotnet.PrimaryConstructor", "Learn.Dotnet.PrimaryConstructor", "{22E8DFFE-6F60-47BA-AE07-A56A02BEC421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Dotnet.PrimaryConstructor", "src\dotnet\Learn.Dotnet.PrimaryConstructor\Learn.Dotnet.PrimaryConstructor.csproj", "{192DCBC1-09BD-489E-BB87-5484AF0E0921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +34,10 @@ Global
 		{4650635B-6EB5-4511-8A2B-74ECC7BEEDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4650635B-6EB5-4511-8A2B-74ECC7BEEDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4650635B-6EB5-4511-8A2B-74ECC7BEEDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192DCBC1-09BD-489E-BB87-5484AF0E0921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192DCBC1-09BD-489E-BB87-5484AF0E0921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192DCBC1-09BD-489E-BB87-5484AF0E0921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192DCBC1-09BD-489E-BB87-5484AF0E0921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +47,8 @@ Global
 		{FAA5308E-FBF6-4CD8-8644-48D42EFA81F8} = {6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203}
 		{B64628DC-C163-4436-8CFB-E39C8781F9DF} = {FAA5308E-FBF6-4CD8-8644-48D42EFA81F8}
 		{4650635B-6EB5-4511-8A2B-74ECC7BEEDAD} = {FAA5308E-FBF6-4CD8-8644-48D42EFA81F8}
+		{22E8DFFE-6F60-47BA-AE07-A56A02BEC421} = {6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203}
+		{192DCBC1-09BD-489E-BB87-5484AF0E0921} = {22E8DFFE-6F60-47BA-AE07-A56A02BEC421}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {410A700A-1F4F-4E3A-A050-2834BD62B6B5}

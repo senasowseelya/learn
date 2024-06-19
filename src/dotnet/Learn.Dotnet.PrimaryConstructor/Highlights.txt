@@ -1,0 +1,7 @@
+﻿Primary Constructor:
+1.Introduced in C# 12.
+2.Defined in the class definition itself and the parameters are accessible throughout the class.
+3.It creates a default MUTABLE backing field for the parameters.
+4.But whenever there is a parameterized constructor, this parameterized constructor must call the primary constructor.
+5.Default values can also be given.
+6.For a Record, a backing property is created rather than a backing field.
