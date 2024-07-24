@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalNumber</title>
+    <style>
+        .vertical {
+            width: 68px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .horizontal {
+            margin-left: 8px;
+            ;
+            height: 20px;
+        }
+        p {
+            margin: 0;
+            font-size: 30px;
+            color: rgb(213, 206, 206);
+        }
+        .container {
+            margin: 1rem;
+        }
+        #content{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="number" />
+    <input type="submit" onclick="display()" />
+    <div id="number-holder">
+        <div id="content"></div>
+    </div>
+</body>
+<script>
+    function getDiv(number) {
+        switch (number) {
+            case "1": return "one";
+            case "2": return "two";
+            case "3": return "three";
+            case "4": return "four";
+            case "5": return "five";
+            case "6": return "six";
+            case "7": return "seven";
+        }
+    }
+
+    function getCode(number) {
+        switch (number) {
+            case "0": return "123456"
+            case "1": return "34";
+            case "2": return "23567";
+            case "3": return "23457";
+            case "4": return "1734";
+            case "5": return "12457";
+            case "6": return "124567";
+            case "7": return "234";
+            case "8": return "1234567";
+            case "9": return "123457";
+        }
+    }
+    var value;
+    function display() {
+        inputValue = document.getElementById("number").value;
+        let contentDiv = document.getElementById("content");
+        contentDiv.innerHTML ="";
+        valueArray = inputValue.toString().split('');
+        for (let i = 0; i < valueArray.length; i++) {
+            digitCode = getCode(valueArray[i]);
+            let content = ` <div class="container">
+            <p id="two-${i}" class="horizontal">-----</p>
+            <div class="vertical">
+                <p id="one-${i}">|</p>
+                <p id="three-${i}">|</p>
+            </div>
+            <p id="seven-${i}" class="horizontal">-----</p>
+            <div class="vertical">
+                <p id="six-${i}">|</p>
+                <p id="four-${i}">|</p>
+            </div>
+            <p id="five-${i}" class="horizontal">-----</p>
+        </div>`;
+            contentDiv.innerHTML += content;
+            document.getElementById("number-holder").appendChild(contentDiv);
+            digitCodeArray = digitCode.split('');
+            for (let j = 0; j < digitCodeArray.length; j++) {
+                var divName = `${getDiv(digitCodeArray[j])}-${i}`;
+                document.getElementById(divName).style.color = "red";
+            }
+        }
+    }
+    let numbers = ["123456", "34", "23567", "23457", "1734", "124567", "124567", "234", "1234567", "12345"]
+</script>
+
+</html>

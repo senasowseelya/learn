@@ -26,7 +26,24 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Dotnet.DependencyInje
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.Dotnet.ClassVsRecord", "Learn.Dotnet.ClassVsRecord", "{1EEEA69F-AB42-4F4C-900F-28F30CE2EE50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.Dotnet.ClassVsRecord", "src\dotnet\Learn.Dotnet.ClassVsRecord\Learn.Dotnet.ClassVsRecord.csproj", "{691C0A08-3DC4-4B45-BF35-95A29EC7B508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learn.Dotnet.ClassVsRecord", "src\dotnet\Learn.Dotnet.ClassVsRecord\Learn.Dotnet.ClassVsRecord.csproj", "{691C0A08-3DC4-4B45-BF35-95A29EC7B508}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "javascript", "javascript", "{E003804A-43B2-4C38-A0F7-8161D6B87DD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.JS.DigitalNumber", "Learn.JS.DigitalNumber", "{92F820A3-C531-4311-BDF0-26F0D2B16F3A}"
+	ProjectSection(SolutionItems) = preProject
+		src\javascript\DigitalNumber\DigitalNumber.html = src\javascript\DigitalNumber\DigitalNumber.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.JS.TicTacToe", "Learn.JS.TicTacToe", "{A9B6EE5A-0699-4875-B410-AEA393C897BF}"
+	ProjectSection(SolutionItems) = preProject
+		src\javascript\TicTacToe\tic-tac-toe.html = src\javascript\TicTacToe\tic-tac-toe.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn.JS.Timer", "Learn.JS.Timer", "{2C28697E-AE95-494B-8B56-CE428F28D1CA}"
+	ProjectSection(SolutionItems) = preProject
+		src\javascript\Timer\timer.html = src\javascript\Timer\timer.html
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +86,10 @@ Global
 		{B3FB8E86-1D94-46B4-AFDD-C1243B666E7F} = {FAA5308E-FBF6-4CD8-8644-48D42EFA81F8}
 		{1EEEA69F-AB42-4F4C-900F-28F30CE2EE50} = {6B93F1DC-23AF-4EF1-B1B0-DD9A11D30203}
 		{691C0A08-3DC4-4B45-BF35-95A29EC7B508} = {1EEEA69F-AB42-4F4C-900F-28F30CE2EE50}
+		{E003804A-43B2-4C38-A0F7-8161D6B87DD2} = {E94C8967-1C47-4FB6-AF0E-E8FF5B8EA4C2}
+		{92F820A3-C531-4311-BDF0-26F0D2B16F3A} = {E003804A-43B2-4C38-A0F7-8161D6B87DD2}
+		{A9B6EE5A-0699-4875-B410-AEA393C897BF} = {E003804A-43B2-4C38-A0F7-8161D6B87DD2}
+		{2C28697E-AE95-494B-8B56-CE428F28D1CA} = {E003804A-43B2-4C38-A0F7-8161D6B87DD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {410A700A-1F4F-4E3A-A050-2834BD62B6B5}

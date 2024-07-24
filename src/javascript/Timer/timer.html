@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+
+<body>
+    <h2>DateTime:</h2>
+    <p id="content"></p>
+  
+    <h2>Timer</h2>
+    <p id="timer"></p>
+    <button onclick="start()">Start</button>
+    <button onclick="end()">end</button>
+    <script>
+        setInterval(getTime, 1000);
+        function getTime() {
+            document.getElementById('content').innerHTML= new Date().toLocaleTimeString();
+        }
+        seconds = 0;
+        min=0;
+        hr=0;
+        function start(){
+           id=setInterval(startTimer,1000);
+        }
+        function end(){
+            seconds=0;
+            min=0;
+            hr=0;
+            document.getElementById("timer").innerHTML = `${hr} :${min}:${seconds}`;
+            clearInterval(id);
+        }
+        function startTimer(){
+            seconds= seconds+1;
+            if(seconds >= 6){
+                seconds =0;
+                min +=1;
+            }
+            if(min >= 6){
+                min = 0;
+                hr = hr+1;
+            }
+            document.getElementById("timer").innerHTML = `${hr} :${min}:${seconds}`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <style>
+        .ttt-container {
+            width: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-top: 20vh;
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ttt-container">
+        <button id="1" onclick="decide(this.id)"></button>
+        <button id="2" onclick="decide(this.id)"></button>
+        <button id="3" onclick="decide(this.id)"></button>
+        <button id="4" onclick="decide(this.id)"></button>
+        <button id="5" onclick="decide(this.id)"></button>
+        <button id="6" onclick="decide(this.id)"></button>
+        <button id="7" onclick="decide(this.id)"></button>
+        <button id="8" onclick="decide(this.id)"></button>
+        <button id="9" onclick="decide(this.id)"></button>
+        <div id="message"></div>
+    </div>
+    <script>
+        currentPlayer = 1;
+        winning = ["123", "147", "159", "456", "258", "357", "789", "369"]
+        playerX = [];
+        playerY = [];
+        isDone = false;
+        function decide(id) {
+            if (document.getElementById(id).innerHTML == "" && !isDone) {
+                if (currentPlayer == 1) {
+                    document.getElementById(id).innerHTML = "X"
+                    operate(playerX,id);
+                }
+                else {
+                    document.getElementById(id).innerHTML = "O";
+                    operate(playerY,id);
+                }
+
+                currentPlayer = currentPlayer == 1 ? 2 : 1;
+            }
+        }
+        function operate(array, id) {
+            array.push(Number(id));
+            array.sort();
+            var val = hasPatternMatch(array.join(""), winning);
+            if (val) {
+                isDone=true;
+                document.getElementById("message").innerHTML = currentPlayer == 1 ? "X WON!!!" : "Y WON!!!";
+            }
+
+        }
+        function hasPatternMatch(string, patterns) {
+            for (const pattern of patterns) {
+                let patternIndex = 0;
+                for (const char of string) {
+                    if (pattern[patternIndex] === char) {
+                        patternIndex++;
+                        if (patternIndex === pattern.length) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>
